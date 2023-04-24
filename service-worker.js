@@ -7,13 +7,13 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
       addResourcesToCache([
         './',
-        '../index.html',
-        './style.css',
-        './scripts.js',
-        './maugallery.js',
-        './images/camera.png',
-        './images/instagram.png',
-        './images/nina.png'
+        './index.html',
+        './assets/style.css',
+        './assets/scripts.js',
+        './assets/maugallery.js',
+        './assets/images/camera.png',
+        './assets/images/instagram.png',
+        './assets/images/nina.png'
       ])
     );
 });
