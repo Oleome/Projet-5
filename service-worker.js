@@ -11,9 +11,9 @@ self.addEventListener('install', (event) => {
         './assets/style.css',
         './assets/scripts.js',
         './assets/maugallery.js',
-        './assets/images/camera.png',
+        './assets/images/camera.jpg',
         './assets/images/instagram.png',
-        './assets/images/nina.png'
+        './assets/images/nina.jpg'
       ])
     );
 });
