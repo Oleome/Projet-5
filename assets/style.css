@@ -40,6 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: auto;
 }
 #about {
 	display: flex;
@@ -65,6 +66,7 @@ body {
 }
 .picture img {
 	width: 100%;
+	height: auto;
 }
 #about-me {
 	flex: 2
@@ -96,7 +98,7 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #000000;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
