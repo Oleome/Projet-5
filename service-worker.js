@@ -11,7 +11,7 @@ self.addEventListener('install', (event) => {
         './assets/style.css',
         './assets/images/camera.jpg',
         './assets/images/instagram.png',
-        './assets/images/nina.jpg'
+        './assets/images/nina.webp'
       ])
     );
 });
