@@ -9,8 +9,6 @@ self.addEventListener('install', (event) => {
         './',
         './index.html',
         './assets/style.css',
-        './assets/scripts.js',
-        './assets/maugallery.js',
         './assets/images/camera.jpg',
         './assets/images/instagram.png',
         './assets/images/nina.jpg'
@@ -29,4 +27,12 @@ const cacheFirst = async (request) => {
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(cacheFirst(event.request));
+});
+
+self.addEventListener('install', function(event) {
+  event.waitUntil(self.skipWaiting());
+});
+
+self.addEventListener('activate', function(event) {
+  event.waitUntil(self.clients.claim());
 });
