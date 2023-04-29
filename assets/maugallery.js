@@ -55,7 +55,9 @@
       } else {
         return;
       }
-    });
+    }); $('.mg-next').on('click', function(e) {
+      console.log(e)
+    })
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
     $(".gallery").on("click", ".mg-prev", () =>
@@ -127,7 +129,7 @@
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
-      let imagesCollection = [];
+      let imagesCollection = []; 
       if (activeTag === "all") {
         $(".item-column").each(function() {
           if ($(this).children("img").length) {
@@ -157,7 +159,7 @@
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
-    },
+    }, 
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -172,7 +174,7 @@
           if ($(this).children("img").length) {
             imagesCollection.push($(this).children("img"));
           }
-        });
+        }); 
       } else {
         $(".item-column").each(function() {
           if (
@@ -217,7 +219,7 @@
                     </div>
                 </div>
             </div>`);
-    },
+    }, 
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
@@ -234,13 +236,13 @@
       } else {
         console.error(`Unknown tags position: ${position}`);
       }
-    },
+    }, 
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
@@ -257,7 +259,8 @@
             .parents(".item-column")
             .show(300);
         }
-      });
+      }); 
     }
-  };
+  }; 
 })(jQuery);
+
