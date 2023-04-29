@@ -55,17 +55,17 @@
       } else {
         return;
       }
-    }); $('.mg-next').on('click', function(e) {
-      console.log(e)
-    })
+    }); 
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
-    $(".gallery").on("click", ".mg-prev", () =>
-      $.fn.mauGallery.methods.prevImage(options.lightboxId)
+    $(".gallery").on("click", ".mg-prev", (e) =>
+      $.fn.mauGallery.methods.prevImage(e)
     );
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    
+ 
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
