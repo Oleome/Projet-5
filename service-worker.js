@@ -9,7 +9,7 @@ self.addEventListener('install', (event) => {
         './',
         './index.html',
         './assets/style.css',
-        './assets/images/camera.jpg',
+        './assets/images/camera.webp',
         './assets/images/instagram.png',
         './assets/images/nina.webp'
       ])
@@ -36,3 +36,4 @@ self.addEventListener('install', function(event) {
 self.addEventListener('activate', function(event) {
   event.waitUntil(self.clients.claim());
 });
+
