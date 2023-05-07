@@ -166,16 +166,26 @@
 </div>
 	<script type="application/ld+json">
 	{
-		 "@context": "https://schema.org/",
-		 "@type": "LocalBusiness",
-		  "name": "Nina Carducci",
+		"@context": "https://schema.org/",
+		"@type": "LocalBusiness",
+		"name": "Nina Carducci",
 		"telephone": "+33 5 56 67 78 89",
-		  "address": {
-			 "@type": "PostalAddress",
-			 "streetAddress": "68 avenue Alsace-Lorraine",
-			 "addressLocality": "Bordeaux",
-			 "postalCode": "33200"
-		   }
+		"image": "./assets/images/nina.webp",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200"
+		},
+		"openingHoursSpecification": {		
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			  "Monday",
+			  "Tuesday"
+			],
+			"opens": "11:30",
+			"closes": "22:00"
+		}		
 	}
 	</script>
 </body>
